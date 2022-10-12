@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+void rev_alt_arr( int arr[], int size) {
+    
+    for (int i=0; i<size; i++) {
+        if (i+1< size){    //ye tum nahi soch paaye the, solution dekh k seekhe.
+            
+        
+            if ( i%2==0) {
+            
+                swap(arr[i],arr[i+1]);
+            
+            }
+        }
+    }
+} 
+void  print_arr(int arr[], int n) {
+    
+    for (int i=0; i<n;i++){
+        
+        cout << arr[i] << " ";
+    }
+}
+
+int main() {
+    
+    int arr[]={2,5,7,4,1,9,8};
+    rev_alt_arr(arr,7);
+    print_arr(arr,7);
+    
+}
